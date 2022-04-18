@@ -7,6 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  profile = {
+    name : "",
+    login : "",
+    company : "",
+    location : "",
+    avatar_url : "",
+    bio : "",
+    hireable : "",
+    blog : "", 
+    email : "",
+    followers : "",
+    following : "",
+    public_gists : "",
+    public_repos : "",
+    html_url : "",
+
+
+
+  }
+username : any
+findProfile : any
+repos :any
+
   constructor() { }
 
   ngOnInit(): void {

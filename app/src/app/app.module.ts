@@ -9,7 +9,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 //import the search SearchService with the code below
-import { SearchService } from './services/search.service';
+import { SearchService } from './search.services';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

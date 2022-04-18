@@ -1,61 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-// imports
-import { SearchService } from '../services/search.service';
+import { SearchComponent } from './search.component';
 
-@Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
-})
-export class SearchComponent implements OnInit {
-//phase 2 profile
-//private  its not necessary to write private before profile below-
- profile:any[];
-//repos property
-repos: any[];
-  username:string;
+describe('SearchComponent', () => {
+  let component: SearchComponent;
+  let fixture: ComponentFixture<SearchComponent>;
 
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ SearchComponent ]
+    })
+    .compileComponents();
+  }));
 
-//add code inside constructor
-  constructor(private searchService: SearchService) {
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SearchComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-    this.searchService.updateProfile(this.username);
-    this.searchService.getProfileInfo().subscribe(profile => {
-       console.log(profile);
-
-       //phase 2 profile propety to be used search.component
-       this.profile = profile;
-     });
-
-     //repos  searchServcie
-     this.searchService.getProfileRepos().subscribe(repos => {
-   console.log(repos);
-   this.repos = repos;
- })
-
-
-   }
-
-   //below code is used for the form search
-  findProfile() {
-    this.searchService.updateProfile(this.username);
-    this.searchService.getProfileInfo().subscribe(profile => {
-       console.log(profile);
-
-       //phase 2 profile propety to be used search.component
-       this.profile = profile;
-     });
-
-     //repos  searchServcie
-     this.searchService.getProfileRepos().subscribe(repos => {
-   console.log(repos);
-   this.repos = repos;
- })
-//end of repos service
-}
-
-  ngOnInit() {
-  }
-
-}
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
