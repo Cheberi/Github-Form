@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SearchBarComponent
   ],
   imports: [
+    NgModule,
     BrowserModule,
     AppRoutingModule
   ],
@@ -18,3 +20,4 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+z
