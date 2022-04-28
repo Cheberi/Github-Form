@@ -10,7 +10,7 @@ Github Finder is a web app that allows users to search github profile and repos 
 To get a local copy to your machine.
 ### Setup
 * Clone the following repo:
-https://github.com/Cheberi/Github-Form
+'https://github.com/Cheberi/Github-Form'
 
 ### Technologies used
 * Angular
