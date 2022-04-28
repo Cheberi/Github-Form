@@ -1,7 +1,10 @@
 <section class="search">
     <article class="search-title">
-        <h1>Github-Finder</h1>
-        <h4>Enter a username to fetch a <span>user profile</span> and <span>repos</span></h4>
+        <h1>Github-Form</h1>
+        <h4>Please enter a username in order to view their
+            <span style="color: white;">user profile</span> and
+            <span style="color:white">repos</span>
+        </h4>
     </article>
     <article class="search-input">
         <form (submit)="searchUser($event,user.value)">
@@ -9,7 +12,7 @@
                 <img [src]="magnify" alt="">
                 <input type="text" placeholder="Search" #user>
             </div>
-            <button type="submit">search</button>
+            <button type="submit" style="color: darkblue;">search</button>
         </form>
     </article>
 </section>
@@ -19,7 +22,7 @@
             <img [src]="avatar" alt="profile pic">
         </div>
         <div class="profile-main-button">
-            <a [href]="link" target="_blank">View Profile</a>
+            <a [href]="link" target="_blank" style="color:darkblue">View Profile</a>
         </div>
     </article>
     <article class="profile-details">
