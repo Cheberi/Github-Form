@@ -33,7 +33,7 @@ export class UserComponent implements OnInit {
   }
   searchUser(e: any,username: string){
     if(username === ''){
-      alert("Enter a username")
+      alert("Enter a username!")
     }else{    
     this.active = true;
     this.userFetch.userFetch(username);
