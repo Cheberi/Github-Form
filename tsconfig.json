@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/github-finder",
+    "outDir": "dist/app",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
